@@ -1,0 +1,16 @@
+{
+  "name": "automacaomobile",
+  "version": "1.0.0",
+  "description": " Projeto de automação Android",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dionis Moreira",
+  "license": "ISC",
+  "dependencies": {
+    "appium": "^1.22.3",
+    "codeceptjs": "^3.6.7",
+    "webdriverio": "^8.6.3"
+  }
+}
