@@ -1,4 +1,5 @@
 name: Testes CodeceptJS com Appium
+
 on:
   push:
     branches:
@@ -12,31 +13,36 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    # Passo 1: Checar código
+    - name: Checar código
+      uses: actions/checkout@v3
+
+    # Passo 2: Configurar Node.js
     - name: Configurar Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '16'
 
+    # Passo 3: Instalar dependências
     - name: Instalar dependências
       run: |
         npm install -g appium
         npm install
 
+    # Passo 4: Instalar Appium e drivers
     - name: Instalar Appium
       run: |
         npm install -g appium
         appium driver install uiautomator2
 
+    # Passo 5: Rodar testes CodeceptJS
     - name: Executar testes CodeceptJS
       run: |
         npx codeceptjs run --verbose
 
+    # Passo 6: Arquivar relatórios de testes
     - name: Arquivar relatórios de testes
       uses: actions/upload-artifact@v3
       with:
         name: codeceptjs-reports
         path: output
-
-    - name: Mostrar os logs do Appium
-      run: |
-        tail -n 50 appium.log
