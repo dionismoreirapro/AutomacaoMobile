@@ -4,8 +4,7 @@ module.exports = {
 
   fields:{
     email: '~email',
-    senha: '~senha',
-    
+    senha: '~senha',   
   },
   
   buttons:{
