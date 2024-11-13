@@ -16,6 +16,7 @@ Antes de iniciar, certifique-se de que os seguintes requisitos estão atendidos:
 - **Node.js** e **npm** instalados. Baixe em [Node.js](https://nodejs.org/).
 - **Java** instalado e configurado no PATH. Baixe em [Java](https://www.oracle.com/java/technologies/javase-downloads.html).
 - **CodeceptJS** e **Mochawesome** (opcional) para relatórios. Você pode instalar esses pacotes após clonar o repositório.
+- **Appium** instalado para automação de dispositivos móveis.
 
 ## Clonando o Repositório
 
@@ -36,12 +37,18 @@ Após clonar o repositório, instale o CodeceptJS e Mochawesome executando:
 ```bash
 npm install
 ```
+
 ## Como Executar os Testes
-1.Para rodar os testes, utilize os comandos abaixo no terminal.
+1.Iniciar o appium com o seguinte comando:
+```
+ npx appium
+```
+
+2.Para rodar os testes, utilize os comandos abaixo no terminal.
 ```
  npx codeceptjs run
 ```
-2.Executar os Testes com Relatório</br>
+3.Executar os Testes com Relatório</br>
 Para gerar um relatório detalhado em formato Mochawesome, utilize o comando:
 ```
  npx codeceptjs run --reporter mochawesome
