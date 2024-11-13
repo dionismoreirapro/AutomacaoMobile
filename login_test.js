@@ -8,7 +8,7 @@ Scenario("login com sucesso", ({ I, login_pagePage }) => {
 });
 
 Scenario("login sem sucesso", ({ I,login_pagePage }) => {
-  login_pagePage.realizandoLogin('teste@teste','123456')
+  login_pagePage.realizandoLogin('','123456')
   I.waitForElement("~lognFail", 5);
   I.seeElement("~lognFail");
 });
