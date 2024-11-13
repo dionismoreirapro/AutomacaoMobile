@@ -45,7 +45,7 @@ npm install
 ```
  npx appium
 ```
-3.Inicie o emulador android pelo android studio
+2.Inicie o emulador android pelo android studio
 
 3.Para rodar os testes, utilize os comandos abaixo no terminal.
 ```
