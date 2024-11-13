@@ -8,6 +8,7 @@ Este projeto tem como objetivo realizar testes automatizados para uma aplicaçã
 - **Java**: Usado para automação e integração com a aplicação.
 - **Node.js**: Ambiente de execução para o CodeceptJS.
 
+
 ## Pré-requisitos
 
 Antes de iniciar, certifique-se de que os seguintes requisitos estão atendidos:
@@ -17,6 +18,7 @@ Antes de iniciar, certifique-se de que os seguintes requisitos estão atendidos:
 - **Java** instalado e configurado no PATH. Baixe em [Java](https://www.oracle.com/java/technologies/javase-downloads.html).
 - **CodeceptJS** e **Mochawesome** (opcional) para relatórios. Você pode instalar esses pacotes após clonar o repositório.
 - **Appium** instalado para automação de dispositivos móveis.
+- **Android Studio:** instalado para emulação e desenvolvimento Android
 
 ## Clonando o Repositório
 
@@ -43,12 +45,13 @@ npm install
 ```
  npx appium
 ```
+3.Inicie o emulador android pelo android studio
 
-2.Para rodar os testes, utilize os comandos abaixo no terminal.
+3.Para rodar os testes, utilize os comandos abaixo no terminal.
 ```
  npx codeceptjs run
 ```
-3.Executar os Testes com Relatório</br>
+4.Executar os Testes com Relatório</br>
 Para gerar um relatório detalhado em formato Mochawesome, utilize o comando:
 ```
  npx codeceptjs run --reporter mochawesome
