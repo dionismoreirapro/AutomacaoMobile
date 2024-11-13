@@ -24,10 +24,18 @@ Após clonar o repositório, instale o CodeceptJS e Mochawesome executando:
 ```bash
 npm install
 ```
-Em seguida, acesse o diretório do projeto:
-   ```
-    cd automacaoMobile
-   ```
+## Clonando o Repositório
+
+Clone o repositório em sua máquina local usando o comando abaixo:
+
+```bash
+    git clone https://github.com/dionismoreirapro/automacaoMobile
+```
+Depois de clonar, acesse o diretório do projeto:
+
+```bash
+    cd automacaoWeb
+```
 ## Como Executar os Testes
 1.Para rodar os testes, utilize os comandos abaixo no terminal.
 ```
