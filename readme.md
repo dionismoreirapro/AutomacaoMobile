@@ -17,13 +17,6 @@ Antes de iniciar, certifique-se de que os seguintes requisitos estão atendidos:
 - **Java** instalado e configurado no PATH. Baixe em [Java](https://www.oracle.com/java/technologies/javase-downloads.html).
 - **CodeceptJS** e **Mochawesome** (opcional) para relatórios. Você pode instalar esses pacotes após clonar o repositório.
 
-### Instalação do CodeceptJS e Mochawesome
-
-Após clonar o repositório, instale o CodeceptJS e Mochawesome executando:
-
-```bash
-npm install
-```
 ## Clonando o Repositório
 
 Clone o repositório em sua máquina local usando o comando abaixo:
@@ -35,6 +28,13 @@ Depois de clonar, acesse o diretório do projeto:
 
 ```bash
     cd automacaoWeb
+```
+### Instalação do CodeceptJS e Mochawesome
+
+Após clonar o repositório, instale o CodeceptJS e Mochawesome executando:
+
+```bash
+npm install
 ```
 ## Como Executar os Testes
 1.Para rodar os testes, utilize os comandos abaixo no terminal.
