@@ -28,7 +28,7 @@ Clone o repositório em sua máquina local usando o comando abaixo:
 Depois de clonar, acesse o diretório do projeto:
 
 ```bash
-    cd automacaoWeb
+    cd automacaoMobile
 ```
 ### Instalação do CodeceptJS e Mochawesome
 
