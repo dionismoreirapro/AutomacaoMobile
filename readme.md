@@ -1,28 +1,43 @@
 # Projeto Mobile - Testes Automatizados
-Este projeto tem como objetivo realizar testes automatizados para uma aplicação mobile utilizando o framework CodeceptJS. Os testes são executados em um ambiente Node.js e interagem com a aplicação por meio de código Java e JavaScript.
 
-### Tecnologias Utilizadas
-CodeceptJS: Framework de testes end-to-end para aplicações móveis e web.
-Java: Usado para automação e integração com a aplicação.
-Node.js: Ambiente de execução para o CodeceptJS.
-Como Executar os Testes
-Para rodar os testes, utilize os seguintes comandos no terminal:
+Este projeto tem como objetivo realizar testes automatizados para uma aplicação mobile, utilizando o framework CodeceptJS. Os testes são executados em um ambiente Node.js e interagem com a aplicação por meio de código Java e JavaScript.
 
-### 1. Executar os Testes Padrão
-Para rodar os testes básicos sem geração de relatórios, execute o comando:
+## Tecnologias Utilizadas
 
-bash
-Copiar código
-npx codeceptjs run
+- **CodeceptJS**: Framework de testes end-to-end para automação de testes em aplicações móveis e web.
+- **Java**: Usado para automação e integração com a aplicação.
+- **Node.js**: Ambiente de execução para o CodeceptJS.
 
-### 2. Executar os Testes com Relatório
+## Pré-requisitos
+
+Antes de iniciar, certifique-se de que os seguintes requisitos estão atendidos:
+
+- **Git** para clonar o repositório.
+- **Node.js** e **npm** instalados. Baixe em [Node.js](https://nodejs.org/).
+- **Java** instalado e configurado no PATH. Baixe em [Java](https://www.oracle.com/java/technologies/javase-downloads.html).
+- **CodeceptJS** e **Mochawesome** (opcional) para relatórios. Você pode instalar esses pacotes após clonar o repositório.
+
+### Instalação do CodeceptJS e Mochawesome
+
+Após clonar o repositório, instale o CodeceptJS e Mochawesome executando:
+
+```bash
+npm install
+```
+Em seguida, acesse o diretório do projeto:
+   ```
+    cd automacaoMobile
+   ```
+## Como Executar os Testes
+1.Para rodar os testes, utilize os comandos abaixo no terminal.
+```
+ npx codeceptjs run
+```
+2.Executar os Testes com Relatório</br>
 Para gerar um relatório detalhado em formato Mochawesome, utilize o comando:
-
-bash
-Copiar código
-npx codeceptjs run --reporter mochawesome
-
-Observação: O Mochawesome é um reporter que gera relatórios visuais para acompanhar os resultados dos testes. O relatório será gerado na pasta padrão configurada no arquivo codecept.conf.js.
+```
+ npx codeceptjs run --reporter mochawesome
+```
 
 ### Relatório de Testes
 ![Relatorio de teste ](https://github.com/dionismoreirapro/automacaoMobile/blob/main/report.png)
