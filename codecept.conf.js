@@ -11,7 +11,7 @@ setCommonPlugins();
 
 /** @type {CodeceptJS.MainConfig} */
 exports.config = {
-  tests: './*_test.js',
+  tests: './steps/*_test.js',
   output: './output',
   helpers: {
     Appium: {
@@ -25,6 +25,7 @@ exports.config = {
 
 
     login_pagePage: "./pages/login_page.js",
+    home_pagePage: "./pages/home_page.js",
   },
   name: 'automacaoMobile'
 }

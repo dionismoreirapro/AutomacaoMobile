@@ -16,5 +16,11 @@ module.exports = {
     I.fillField(this.fields.senha,senha)
     I.click(this.buttons.btnEntrar);
  
+  },
+
+  chegandoLoginSemSucesso() {
+    I.waitForElement("~lognFail", 5);
+    I.seeElement("~lognFail");
+
   }
 }
